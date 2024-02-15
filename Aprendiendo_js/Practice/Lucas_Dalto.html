@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning JavaScript GG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Aprendiendo JavaScript con Lucas Dalto</h1>
+    <ul id="tutores" class="kuepa">
+        <li><a href="German_Gomez.html">Tutor Germán Gómez</a></li>
+        <li><a href="Luis_Laiton.html">Tutor Luis Laiton</a></li>
+    </ul>
+
+    <hr> <h2 class="junior" title="Junior">Nivel Junior</h2> <hr>
+    <article>
+        <h3 class="cap-1">Capitulo 1 - Introducción</h3>
+        <div class="cap-1-intro">  
+            <h4>Tipos de datos</h4> <br>
+            <section>
+                <script>
+                    // string = "cadena de textp"; //Toda cadena de texto va entre comillas
+                    // number = 2;
+                    // boolean = true; //Pueden ser  / true - false /// 0 - 1
+                </script>
+            </section>
+    
+            <h4>Variables</h4>
+            <section>
+                <script>
+                    // // Trabajan con bloques
+                    // var letra = "A"; //Alcance global
+                    // let numero = 2; //Menor alcance, si se declara afuera, tiene alcance global
+                    // const nombreA = "Manuel"; //Constante, una vez definida no puede cambiar su valor - Se tiene que inicializar cuando se declara
+                    // let num = null; // Variable vacia o nula   
+    
+                    // // NaN = Not a Number
+                    // let num1 = 5;
+                    // let num2 = "Juan";
+                    // document.write(num1 * num2);
+                </script>
+            </section>
+    
+            <br>
+    
+            <h4>Operadores</h4>
+            <section>
+                <h5>Operadores de asignación</h5>
+                <script>
+                    // // Adición
+                    // numero = 10;
+                    // numero += 5;
+                    // document.write(numero + "<br>");
+            
+                    // // Sustracción
+                    // let numero1 = 10;
+                    // numero1 -= 5;
+                    // document.write(numero1 + "<br>");
+            
+                    // // Multiplicación
+                    // let numero2 = 10;
+                    // numero2 *= 5;
+                    // document.write(numero2 + "<br>");
+            
+                    // // División
+                    // let numero3 = 10;
+                    // numero3 /= 5;
+                    // document.write(numero3 + "<br>");
+            
+                    // // Residuo o resto
+                    // let numero4 = 10;
+                    // numero4 %= 5;
+                    // document.write(numero4 + "<br>");
+            
+                    // // Exponenciación
+                    // let numero5 = 10;
+                    // numero5 **= 2;
+                    // document.write(numero5 + "<br>");
+                </script>
+            
+                <h5>Operadores aritméticos</h5> 
+                <script>
+                    // num1 = 10;
+                    // num2 = 5;
+            
+                    // // Adición
+                    // num1 = 10;
+                    // num2 = 5;
+                    // suma = num1 + num2;
+                    // document.write(suma + "<br>");
+            
+                    // // Decremento
+                    // num1 = 10;
+                    // num1--;
+                    // document.write(num1 + "<br>");
+            
+                    // // División
+                    // num1 = 10;
+                    // num2 = 5;
+                    // let division = num1 / num2;
+                    // document.write(division + "<br>");
+            
+                    // // Exponenciación
+                    // num1 = 8;
+                    // num2 = 2;
+                    // let expo = num1 ** num2;
+                    // document.write(expo + "<br>");
+            
+                    // // Decremento
+                    // num1 = 10;
+                    // num1++;
+                    // document.write(num1 + "<br>");
+            
+                    // // Residuo o resto
+                    // num1 = 10;
+                    // num2 = 5;
+                    // residuo = num1&num2;
+                    // document.write(residuo + "<br>");
+            
+                    // // Sustracción
+                    // num1 = 10;
+                    // num2 = 6;
+                    // resta = num1 - num2;
+                    // document.write(resta + "<br>");
+            
+                    // // Unary negation - Pasarlo a negativo
+                    // num1 = 10;
+                    // negativo = -num1;
+                    // document.write(negativo + "<br>");
+                </script>
+            </section>
+    
+            <br>
+            
+            <h4>Concatenación</h4>
+            <section>
+                <script>
+                    // // Concatenación de strings
+                    // saludo = "¡Hola Manuel! ";
+                    // pregunta = "¿Cómo estas?";
+                    // frase = saludo + pregunta;
+                    // document.write(frase + "<br>");
+                    
+                    // // Forzando como String
+                    // num1 = 5;
+                    // num2 = 8;
+                    // frase = "" + num1 + num2;
+                    // document.write(frase + "<br>");
+                    
+                    // // Con la función Concat - Solo funciona si almenos un valor es un string
+                    // num1 = "25";
+                    // num2 = 8;
+                    // frase = num1.concat(num2);
+                    // document.write(frase + "<br>");
+                    
+                    // // Con backtikcs y la variable entre Simbolo de pesos y llaves ${}
+                    // nombre = "Manuel";
+                    // frase = `Soy ${nombre} y estoy caminando`;
+                    // document.write(frase + "<br>");
+                </script>
+            </section>
+    
+            <br>
+    
+            <h4>Operadores</h4>
+            <section>
+                <h5>Operadores de comparación</h5>
+                <script>
+                    // // Devuelve un resulteado booleano
+            
+                    // // Comparador de igualdad /// No diferencia tipos de datps, verifica si el valor es el mismo
+                    // numero = 2;
+                    // numero2 = 3;
+                    // texto = "2";
+                    // document.write(numero == numero2);
+                    // document.write(" ");
+                    // document.write(numero == texto);
+                    // document.write("<br>");
+            
+                    // // Comparador de inigualdad 
+                    // numero = 2;
+                    // numero2 = 5;
+                    // document.write(numero != numero2);
+                    // document.write("<br>");
+            
+                    // // Comparador de identidad /// Verifica el tipo de dato y el valor es estrictamente igual
+                    // numero = 10;
+                    // texto = "10";
+                    // document.write(numero === texto);
+                    // document.write("<br>");
+            
+                    // // Comparador de inidentidad /// Verifica si el tipo de dato y el valor no es estrictamente igual
+                    // numero = 10;
+                    // texto = "10";
+                    // document.write(numero !== texto);
+                    // document.write("<br>");
+            
+                    // // Comparador mayor
+                    // numero = 10;
+                    // numero2 = 15;
+                    // document.write(numero > numero2);
+                    // document.write("<br>");
+            
+                    // // Comparador menor
+                    // numero = 10;
+                    // numero2 = 15;
+                    // document.write(numero < numero2);
+                    // document.write("<br>");
+            
+                    // // Comparador mayor o igual
+                    // numero = 10;
+                    // numero2 = 15;
+                    // document.write(numero <= numero2);
+                    // document.write("<br>");
+            
+                    // // Comparador menor o igual
+                    // numero = 10;
+                    // numero2 = 15;
+                    // document.write(numero >= numero2);
+                    // document.write("<br>");
+                </script>
+            
+                <h5>Operadores lógicos</h5>    
+                <script>
+                    // // Devuelven resultado si se cumple o no una condición - Su resultado es booleano y solo acepta valores booleanos
+    
+                    // valor1 = true;
+                    // valor2 = true;
+                    // valor3 = false;
+                    // valor4 = false;
+    
+                    // // AND /// Su las dos condiciones se cumplen es verdadero, sino es falso
+    
+                    // resultado1 = valor1 && valor2;
+                    // document.write(resultado1);
+                    // document.write("<br>");
+    
+                    // resultado1 = valor1 && valor3;
+                    // document.write(resultado1);
+                    // document.write("<br>");
+    
+                    // resultado1 = valor3 && valor4;
+                    // document.write(resultado1);
+                    // document.write("<br>");
+    
+                    // num1 = 12;
+                    // num2 = 24;
+    
+                    // afirmacion1 = num1 < num2;
+                    // afirmacion2 = num1 != num2;
+                    // afirmacion3 = num1 > num2;
+                    // afirmacion4 = num1 === num2;
+                    // document.write(afirmacion1 && afirmacion2);
+                    // document.write("<br>");
+                    // document.write(afirmacion1 && afirmacion3);
+                    // document.write("<br>");
+                    
+                    // // OR /// Si una condición es verdadera, da por hecho que todo es verdadero, si las dos son falsas, devuelve falso
+                    
+                    // resultado2 = valor1 || valor2;
+                    // document.write(resultado2);
+                    // document.write("<br>");
+                    
+                    // document.write(afirmacion3 || afirmacion4);
+                    // document.write("<br>");
+                    
+                    // // NOT /// REgresa lo contrario del valor que se retorna
+                    
+                    // num1 = 12;
+                    // num2 = 24;
+    
+                    // afirmacion1 = num1 < num2;
+                    // afirmacion2 = num1 != num2;
+                    // afirmacion3 = num1 > num2;
+                    // afirmacion4 = num1 === num2;
+                    
+                    // document.write(!afirmacion1);        
+                    // document.write("<br>");
+                    // document.write(!afirmacion2);        
+                    // document.write("<br>");
+                    // document.write(!afirmacion3);        
+                    // document.write("<br>");
+                    // document.write(!afirmacion3);        
+                    // document.write("<br>");
+                    // document.write(!true);        
+                    // document.write("<br>");
+                    // document.write(!false);       
+                </script>
+            </section>
+    
+            <br>
+    
+            <h4>Condicionales</h4>
+            <section>
+                <script>
+                    // // Sentencia que nos permite validar algo dentro de un bloque "{}"
+                    // nombre1 = "Manuel Poveda"
+                    //     if (nombre1 == "Manuel"){ //SI
+                    //         document.write("Tu nombre es " + nombre1);        
+                    //     } 
+                    //     else if (nombre1 == "Poveda"){ // Sino, Entonces si
+                    //         document.write("Tu apellodo es " + nombre1);            
+                    //     }
+                    //     else {  // Sino
+                    //         document.write("No se encontró tu nombre");            
+                    //     }
+                    //     document.write("<br>");
+            
+                    // nombre1 = "Manuel"
+                    //     if (nombre1 == "Manuel"){
+                    //         document.write("Tu nombre es " + nombre1);        
+                    //     } else if (nombre1 == "Poveda"){
+                    //         document.write("Tu apellodo es " + nombre1);            
+                    //     }else {            
+                    //         document.write("No se encontró tu nombre");            
+                    //     }
+                    //     document.write("<br>");
+            
+                    // nombre1 = "Poveda"
+                    //     if (nombre1 == "Manuel"){
+                    //         document.write("Tu nombre es " + nombre1);        
+                    //     } else if (nombre1 == "Poveda"){
+                    //         document.write("Tu apellido es " + nombre1);            
+                    //     }else {            
+                    //         document.write("No se encontró tu nombre");            
+                    //     }
+                </script>
+            </section>
+        </div>
+    
+        <h3 class="cap-1">Capitulo 2 - Arrays</h3>
+        <div class="cap-1-array">
+            <h4>Arrays</h4>
+            <section>
+                <script>
+                    // // Los arrays inician desde la posición 0
+                    // // El indice es la pocisión
+                    // frutas = ["Pera","Manzana","Uva","Naranja"];
+                    // document.write(frutas)
+                    // document.write("<br>")
+                    // document.write(frutas[0])
+                    // document.write("<br>")
+                    // document.write(frutas[1])
+                    // document.write("<br>")
+                    // document.write(frutas[2])
+                    // document.write("<br>")
+                    // document.write(frutas[3])
+                    // document.write("<br>")
+                </script>
+    
+                <h5>Arrays Asociativos</h5>
+                <script>
+                    // let pc = {
+                    //     nombre:  "MaalcPC",
+                    //     tarjetaGrafica: "Intel HD Graphics 3000",
+                    //     procesador: "Intel Core i5 2410M",
+                    //     ram: "16GB",
+                    //     almacenamiento: "500GB",
+                    //     sistemaOperativo: "Windows 10",
+                    //     tipoSistema: "64 bits"
+                    // }
+                    
+                    // let nombre = pc["nombre"];
+                    // let tarjetaGrafica = pc["tarjetaGrafica"];
+                    // let procesador = pc["procesador"];
+                    // let ram = pc["ram"];
+                    // let almacenamiento = pc["almacenamiento"];
+                    // let sistemaOperativo = pc["sistemaOperativo"];
+                    // let tipoSistema = pc["tipoSistema"];
+            
+                    // let especificaciones = `El nombre de la PC es <b>${nombre}</b> <br>
+                    // La tarjeta gráfica es <b>${tarjetaGrafica}</b> <br>
+                    // El procesador es un <b>${procesador}</b> <br>
+                    // la memoria RAM es de <b>${ram}</b><br>
+                    // Tiene un almacenamiento de <b>${almacenamiento}</b><br>
+                    // Su sistema operativo es <b>${sistemaOperativo}</b><br>
+                    // El tipo de sistema que tiene es de <b>${tipoSistema}</b>`;
+            
+                    // document.write(especificaciones)
+                </script>
+            </section>
+            
+            <br>
+    
+            <h4>Bucles e Iteración</h4> <!-- Estructuras de control como el if-->
+            <section>
+                <h5>While</h5>
+                <script>
+                    // numero = 0;
+                    // while (numero < 8) {
+                    //     numero++;
+                    //     document.write(numero + " ");
+                    // }
+                    // document.write("<br>");
+                    // numero2 = 0;
+                    // while (numero2 < 1000) {
+                    //     numero2++;
+                    //     document.write(numero2 + " ");
+                    //     if (numero2 == 15){ //Condicional para terminar el bucle
+                    //         break; // Sentencia para terminar el bucle cuando la condición se cumple
+                    //     }
+                    // }
+                </script>
+            
+                <h5>Do While</h5>
+                <script>
+                    // numero = 0;
+                    // do {
+                    //     document.write(`${numero} `);
+                    //     numero++;
+                    // } while (numero <= 8);
+                </script>
+    
+                <h5>For</h5>
+                <script>
+                    // // Primer parte - Se deben declarar e inicializar las variables
+                    // // Segunda parte - Se debe aplicar la condición
+                    // // Tercer parte - Se deben iterar, es decir, repetirlas - Aumento o decremento
+                    // for (let i = 0; i < 6; i++) {
+                    //     document.write(`${i} `);
+                    // }
+    
+                    // document.write("<br>");
+    
+                    // for (let i = 6; i > 0; i--) {
+                    //     document.write(`${i} `);
+                    // }
+    
+                    // document.write("<br>");
+                    
+                    // for (let i = 0; i <= 10; i++) {
+                    //     if(i == 6 || i == 9){
+                    //         continue; // Es una forma de saltar la iteración y continuar con el siguiente
+                    //     }
+                    //     document.write(`${i} `);
+                    // }
+                </script>
+    
+                <h5>For in y for of</h5>
+                <script>
+                    // animales = ["gato","perro","hamster"];
+                    // animales.edad = 5;
+    
+                    // // FOR IN devuelve la posición o el índice del objeto
+                    // for (animal in animales) {
+                    //     document.write(`${animal} <br>`);
+                    // }
+                    
+                    // document.write("<br>");
+                    
+                    // // FOR OF devuelve el valor del índice y no la posición
+                    // for (animal of animales) {
+                    //     document.write(animal + "<br>");            
+                    // }
+    
+                    // // Ejemplo con arrays de strings
+                    // array1 = ["Maria","Sofia","Andrea"];
+                    // array2 = ["Felipe","Andres",array1,"Antonio"];
+    
+                    // label: // Sentencia para terminar la iteración genreal de un bucle
+                    // for (let array in array2){
+                    //     if (array == 2){
+                    //         for (let array of array1){
+                    //             continue label;
+                    //             document.write(array + "<br>");
+                    //         }
+                    //     } else {
+                    //         document.write(array2[array] + "<br>");
+                    //     }
+                    // }
+                </script>
+            </section>
+    
+            <br>
+    
+            <h4>Funciones</h4>
+            <section>
+                <h5>Crear y llamar funciones</h5>
+                <script>
+                    // // Formas de crear funciones y llamarlas
+            
+                    // function saludar1(){ // Definor y declarar función
+                    //     respuesta = prompt("¡Hola Manuel! ¿Cómo te fue hoy?");
+                    //     if (respuesta == "bien"){
+                    //         alert("¡Me alegro!");
+                    //     } else {
+                    //         alert("¡Que lástima!");
+                    //     }
+                    // }
+                    // saludar1() //Llamar a la función
+            
+                    // saludar2 = function(){
+                    //     respuesta = prompt("¡Hola Manuel! ¿Cómo te fue hoy?");
+                    //     if (respuesta == "bien"){
+                    //         alert("¡Me alegro!");
+                    //     } else {
+                    //         alert("¡Que lástima!");
+                    //     }
+                    // }
+                    // saludar2()
+            
+                    // // Uso del return
+                    // function saludar(){
+                    //     alert("Hola!");
+                    //     return "La función se ejecutó correctamente.";
+                    // }
+                    // let saludo = saludar();
+                    // document.write(saludo);
+            
+                    // const saludar = function(nombre){
+                    //     let frase = `¡Hola ${nombre}! ¿Cómo estás?`;
+                    //     document.write(frase);
+                    // }
+            
+                    // const saludar = nombre=>{
+                    //     let frase = `¡Hola ${nombre}! ¿Cómo estás?`;
+                    //     document.write(frase);
+                    // }
+                    // saludar("pedro");
+                    // const saludar2 = ()=>{
+                    //     let frase = `¡Hola ${nombre}! ¿Cómo estás?`;
+                    //     document.write(frase);
+                    // }
+                </script>
+            </section>
+
+        </div>
+    
+        <h3 class="cap-1">Capitulo 3 - POO</h3>
+        <div class="cap-1-poo">
+            <h4>Programación Orientada a Objetos</h4>
+            <section>
+                <h5>Clases, Constructor y Métodos</h5>
+                <script>
+                    // class animal { // Clase 
+                    //     constructor(especie,edad,color){ // Constructor para el objeto
+                    //         this.especie = especie; // Atributos
+                    //         this.edad = edad;
+                    //         this.color = color;
+                    //         this.info = `Soy un ${this.especie}, tengo ${this.edad} años y soy de color ${this.color}`;
+                    //     }
+                    //     verInfo(){ //Método
+                    //         document.write(this.info);
+                    //     }
+                    // }
+            
+                    // let perro = new animal("perro",5,"blanco",);
+                    // let gato = new animal("gato",3,"gris");
+                    // let conejo = new animal("pajaro",1,"negro");
+            
+                    
+                    // document.write(perro.info + "<br>");
+                    // document.write(gato.info + "<br>");
+                    // document.write(conejo.info + "<br>");
+            
+                    // // Métodos - Se crean dentro de la clase
+            
+                    // perro.verInfo();
+                    // document.write("<br>");
+                    // gato.verInfo();
+                    // document.write("<br>");
+                    // conejo.verInfo();
+                </script>
+    
+                <h5>Abstracción, Modularidad, Encapsulamiento y Polimorfismo</h5>
+                <script>
+                    // let abstracción = "Caracteristicas y aspectos mas importantes del objeto resumido";
+                    // let modularidad = "Capacidad de resolver un problema grande dividiendolo por secciones";
+                    // let encapsulamiento = "Hacer que todos los datos esten privados y no sean accesible de forma sencilla";
+                    // let Polimorfismo = "Consiste en ver como un objeto se comporta de manera distinta ante el mismo método";
+                    // // Cuando se logra crear una clase aplicando estos 4 conceptos 
+                    // // anteriores, con equilibrio, se llega a un sistema orientado a objetos ideal
+    
+                    // class animal { // Clase 
+                    //     constructor(especie,edad,color,taxo){ // Constructor para el objeto
+                    //         this.especie = especie; // Atributos
+                    //         this.edad = edad;
+                    //         this.color = color;
+                    //         this.taxo = taxo;
+                    //         this.info = `Soy un ${this.especie}, tengo ${this.edad} años, soy de color ${this.color} y mi taxonomia es ${this.taxo}`;
+    
+                    //     }
+                    //     verInfo(){ //Método
+                    //         document.write(this.info);
+                    //     }
+                    //     sonido(){
+                    //         if (this.especie == "perro"){
+                    //             document.write("Guau!" + "<br>");
+                    //         }
+                    //         else if (this.especie == "gato"){
+                    //             document.write("Miau!" + "<br>");
+                    //         } 
+                    //         else if (this.especie == "pato"){
+                    //             document.write("Cuack!" + "<br>");
+                    //         } 
+                    //         else {
+                    //             document.write(`No puede hacer sonidos esta especie => ${this.especie} <br> `);
+                    //         }
+                    //     }
+                    // }
+    
+                    // let perro = new animal("perro",5,"blanco","canino");
+                    // let gato = new animal("gato",3,"gris","felino");
+                    // let pato = new animal("pato",1,"negro","ave");
+    
+                    
+                    // document.write(perro.info + "<br>");
+                    // document.write(gato.info + "<br>");
+                    // document.write(pato.info + "<br>");
+    
+                    // // Métodos - Se crean dentro de la clase
+                    
+                    // perro.sonido();
+                    // gato.sonido();
+                    // pato.sonido();
+                </script>
+            
+    
+                <h5>Herencia, Métodos estáticos, Métodos accesores (Getter - Setter) </h5>
+                <script>
+                    // // Herencia 
+                    // class Animal { // Clase 
+                    //     constructor(especie,edad,color){ // Constructor para el objeto
+                    //         this.especie = especie; // Atributos
+                    //         this.edad = edad;
+                    //         this.color = color;
+                    //         this.info = `Soy un ${this.especie}, tengo ${this.edad} años y soy de color ${this.color}`;
+                    //     }
+                    //     verInfo(){ //Método
+                    //         document.write(this.info + "<br>");
+                    //     }
+                    // }
+    
+                    //         class Perro extends Animal {
+                    //             constructor(especie,edad,color,raza){
+                    //                 super(especie,edad,color);
+                    //                 this.raza = null;
+                    //             }
+                    //             set modRaza(newNombre){ // Método tomado como propiedad
+                    //                 this.raza = newNombre
+                    //             }
+                    //             get getRaza(){ 
+                    //                 return this.raza;
+                    //             }
+                    //         }
+    
+                    //         class Gato extends Animal {
+                    //             constructor(especie,edad,color,raza){
+                    //                 super(especie,edad,color);
+                    //                 this.raza = null;
+                    //             }
+                    //             set modRaza(newNombre){ // Método tomado como propiedad
+                    //                 this.raza = newNombre
+                    //             }
+                    //             get getRaza(){ 
+                    //                 return this.raza;
+                    //             }
+                    //         }
+    
+                    //         class Pato extends Animal {
+                    //             constructor(especie,edad,color,raza){
+                    //                 super(especie,edad,color);
+                    //                 this.raza = null;
+                    //             }
+                    //             set modRaza(newNombre){ // Método tomado como propiedad
+                    //                 this.raza = newNombre
+                    //             }
+                    //             get getRaza(){ 
+                    //                 return this.raza;
+                    //             }
+                    //         }
+    
+                    // const perro = new Perro("perro",5,"blanco","pug");
+                    // const gato = new Gato("gato",3,"gris");
+                    // const pato = new Pato("pato",1,"negro");
+    
+                    // perro.verInfo(); perro.modRaza = "Coker"; document.write(perro.getRaza + "<br>");
+                    // gato.verInfo(); gato.modRaza = "Angora"; document.write(gato.getRaza + "<br>");
+                    // pato.verInfo(); pato.modRaza = "Patito"; document.write(pato.getRaza + "<br>");
+                </script>
+            </section>
+        </div>
+    
+        <h3 class="cap-1">Capitulo 4 - Métodos de cadena</h3>
+        <div class="cap-1-metCadena">
+            <h4>Métodos de cadena</h4>
+            <section>
+    
+            <!-- Busca cadenas y devuelve un valor (Si existe o no)-->
+    
+                <h5>concat</h5>
+                <script>
+                    // // junta dos o mas cadenas y retorna una nueva
+    
+                    // cadena = "caadena de prueba";
+                    // cadena2 = new String("cadena de prueba 2");
+            
+                    // resultado = cadena.concat(" - hola");
+                    // document.write(resultado);
+                </script>
+            
+                <h5>startsWith</h5>
+                <script>
+                    // // Si una cadena comienza con los caracteres de otra cadena, devuelve true, sino devuelve false
+    
+                    // cadena = "cadena de prueba";
+                    // cadena2 = "cadena";
+            
+                    // resultado = cadena.startsWith(cadena2);
+                    // document.write(resultado);
+                </script>
+            
+                <h5>endsWith</h5>
+                <script>
+                    // // Si una cadena termina con los caracteres de otra cadena, devuelve true, sino devuelve false
+    
+                    // cadena = "cadena de prueba";
+                    // cadena2 = "prueba";
+            
+                    // resultado = cadena.endsWith(cadena2);
+                    // document.write(resultado);
+                </script>
+            
+                <h5>includes</h5>
+                <script>
+                    // //  Si una cadena puede encontrarse dentro de otra cadena, devuelve true, sino devuelve false
+    
+                    // cadena = "prueba@correo.com";
+                    // cadena2 = "@";
+            
+                    // resultado = cadena.includes(cadena2);
+                    // document.write(resultado);
+                </script>
+            
+                <h5>indexOf</h5>
+                <script>
+                    //  // Devuelve el indice del primer caracter de la cadena, sino exista, devuelve -1
+    
+                    // cadena = "prueba@correo.com";
+                    // cadena2 = "@";
+            
+                    // resultado = cadena.indexOf(cadena2);
+                    // document.write(resultado);
+                </script>
+    
+                <h5>lastIndexOf</h5>
+                <script>
+                    // // Devuelve el ultimo indice del primer caracter de la cadena, sinoexiste, devuelve -1
+    
+                    // cadena = "prueba@correo.com prueba2@correo.com";
+                    // cadena2 = "@";
+            
+                    // resultado = cadena.lastIndexOf(cadena2);
+                    // document.write(resultado);
+                </script>
+    
+            <!-- No son estándar pero son propuestas (Se usa para rellenar)-->
+    
+                <h5>padStart</h5>
+                <script>
+                    // // Propuesta de estandar
+                    // // Rellenar cadena al principio con los caracteres deseados
+    
+                    // cadena = "cadena";
+            
+                    // resultado = cadena.padStart(8,"c");
+                    // document.write(resultado);
+                </script>
+    
+                <h5>padEnd</h5>
+                <script>
+                    // // Propuesta de ECMA
+                    // // Rellenar cadena al final con los caracteres deseados.
+    
+                    // cadena = "abcdefghijk";
+            
+                    // resultado = cadena.padEnd(15,"1234");
+                    // document.write(resultado);
+                </script>
+    
+                <h5>repeat</h5>
+                <script>
+                    // // Devuelve la misma cadena pero repetida la cantidad idicada.
+    
+                    // cadena = "123 ";
+            
+                    // resultado = cadena.repeat(3);
+                    // document.write(resultado);
+                </script>
+    
+            <!-- Métodos que transforman a la cadena -->
+    
+                <h5>split</h5>
+                <script>
+                    // // Divide la cadena segun sea requerido  // Es un array
+    
+                    // cadena = "Hola como,estas";
+                    // resultado = cadena.split(" ");
+                    // document.write(resultado + "<br>");
+                    // resultado = cadena.split("como");
+                    // document.write(resultado);
+                </script>
+    
+                <h5>substring</h5>
+                <script>
+                    // // Retoma un pedazo de la cena que se selecciona
+    
+                    // cadena = "0123456789";
+                    // resultado = cadena.substring(1,6);
+                    // document.write(resultado);
+                </script>
+    
+                <h5>toLowerCase</h5>
+                <script>
+                    // // Convierte una cadena a minúscula
+    
+                    // cadena = "TODO EN minuscula";
+                    // resultado = cadena.toLowerCase();
+                    // document.write(resultado);
+                </script>
+    
+                <h5>toUpperCase</h5>
+                <script>
+                    // // Convierte una cadena a mayúscula
+    
+                    // cadena = "todo en mayuscula";
+                    // resultado = cadena.toUpperCase();
+                    // document.write(resultado);
+                </script>
+    
+                <h5>toString</h5>
+                <script>
+                    // // método devuelve una cadena que representada al objeto especificado
+                    // cadena = 1000782630;
+                    // resultado = cadena.toString();
+                    // document.write(resultado);
+                </script>
+    
+                <h5>trim</h5>
+                <script>
+                    // // Elimina los espacios en blanco al principio y al final
+    
+                    // cadena = "   pedro   ";
+                    // resultado = cadena.trim();
+                    // document.write(resultado.length + "<br>");
+                    // document.write(resultado);
+                </script>
+    
+                <h5>trimEnd</h5>
+                <script>
+                    // // Elimina los espacios en blanco al final de una cadena
+    
+                    // cadena = "   pedro   ";
+                    // resultado = cadena.trimEnd();
+                    // document.write(resultado.length + "<br>");
+                    // document.write(resultado);
+                </script>
+    
+                <h5>trimStart</h5>
+                <script>
+                    // // elimina los espacios en blanco al principio de una cadena
+    
+                    // cadena = "   pedro   ";
+                    // resultado = cadena.trimStart();
+                    // document.write(resultado.length + "<br>");
+                    // document.write(resultado);
+                </script>
+            </section>
+    
+            <br>
+    
+            <h4>Métodos de arrays</h4>    
+            <section>
+    
+                <!-- Transformadores -->
+            
+                    <h5>pop</h5>
+                    <script>
+                        // // Elimina el ultimo elemento de un array y lo devuelve
+    
+                        // nombres = ["pedro","maria","jorge"];
+                        // document.write(nombres + "<br>");
+                        // resultado = nombres.pop();
+                        // document.write(resultado + "<br>");
+                        // document.write(nombres);
+                    </script>
+                
+                    <h5>shift</h5>
+                    <script>
+                        // // Elimina el primer elemento de un array y lo devuelve
+    
+                        // nombres = ["pedro","maria","jorge"];
+                        // document.write(nombres + "<br>");
+                        // resultado = nombres.shift();
+                        // document.write(resultado + "<br>");
+                        // document.write(nombres);
+                    </script>
+                
+                    <h5>push</h5>
+                    <script>
+                        // // Agrega un elemento al array al final de la lista
+    
+                        // nombres = ["pedro","maria","jorge"];
+                        // document.write(nombres + "<br>");
+                        // resultado = nombres.push("felipe","joaquin");
+                        // document.write(nombres);
+                    </script>
+                
+                    <h5>reverse</h5>
+                    <script>
+                        // // Invierte el orden de los elementos de un array
+    
+                        // numeros = [1,2,3,4,5];
+                        // document.write(numeros + "<br>");
+                        // numeros.reverse();
+                        // document.write(numeros);
+                    </script>
+                
+                    <h5>unshift</h5>
+                    <script>
+                        // // Agrega uno o más elementos al inicio del array y devuelve la nueva longitud del array
+    
+                        // numeros = [3,4,5];
+                        // document.write(numeros + "<br>");
+                        // numeros.unshift(0,1,2);
+                        // document.write(numeros);
+                    </script>
+            
+                    <h5>sort</h5>
+                    <script>
+                        // // Ordena los elementos de un array localmente y devuelve el arreglo ordenado
+    
+                        // numeros = [0,1,5,6,3,2,4,8,7,9];
+                        // document.write(numeros + "<br>");
+                        // numeros.sort();
+                        // document.write(numeros + "<br>");
+    
+                        // palabras = ["abecedario","mejilla","beca","cangrejo","piraña"];
+                        // document.write(palabras + "<br>");
+                        // palabras.sort();
+                        // document.write(palabras);
+                    </script>
+            
+                    <h5>splice</h5>
+                    <script>
+                        /* // Cambia el contenido de un array eliminando los elementos existentes y/o agregando nuevos elementos
+    
+                        palabras = ["abecedario","mejilla","beca","cangrejo","piraña"];
+                        document.write(palabras + "<br>");
+                        palabras.splice(1,3);
+                        document.write(palabras + "<br>");
+                        
+                        palabras = ["abecedario","mejilla","beca","cangrejo","piraña"];
+                        document.write(palabras + "<br>");
+                        palabras.splice(1,3,"vaca","perro");
+                        document.write(palabras + "<br>");
+                        
+                        palabras = ["abecedario","mejilla","beca","cangrejo","piraña"];
+                        document.write(palabras + "<br>");
+                        palabras.splice(1,0,"vaca","perro");
+                        document.write(palabras + "<br>");
+                        
+                        palabras = ["abecedario","mejilla","beca","cangrejo","piraña"];
+                        document.write(palabras + "<br>");
+                        palabras.splice(-1,0,"vaca","perro");
+                        document.write(palabras + "<br>"); */
+                    </script>
+            
+                <!-- Accesores -->
+            
+                    <h5>join()</h5>
+                    <script>
+                        // // Une todos los elementos de una matriz (u objeto similar) en una cadena y la devuelve
+    
+                        // palabras = ["abecedario","mejilla","beca","cangrejo","piraña"];
+                        // document.write(palabras[1] + "<br>");
+                        // resultado = palabras.join(); // "Se pueden usar los separadores deseados"
+                        // document.write(resultado[1] + "<br>");
+    
+                        // palabras = ["abecedario","mejilla","beca","cangrejo","piraña"];
+                        // document.write(palabras + "<br>");
+                        // resultado = palabras.join(" - "); // "Se pueden usar los separadores deseados"
+                        // document.write(resultado + "<br>");
+                    </script>
+            
+                    <h5>slice()</h5>
+                    <script>
+                        // Devuelve una parte del array dentro de un nuevo array empezando por inicio hasta fin (Fin no incluido)
+    
+                        // palabras = ["abecedario","mejilla","beca","cangrejo","piraña"];
+                        // document.write(palabras + "<br>");
+                        // resultado = palabras.slice(0,3);
+                        // document.write(resultado + "<br>");
+                    </script>
+            
+                <!-- De repetición -->
+            
+                    <h5>filter()</h5>
+                    <script> 
+                        // // Crea un nuevo array con todos los elementos que cumplan la condición
+    
+                        // palabras = ["abecedario","mejilla","beca","cangrejo","piraña"];
+                        
+                        // palabras.filter(palabras => document.write(palabras + "<br>"))
+                        // // palabras.filter(
+                        // //     (palabras) => {
+                        // //         document.write(palabras + "<br>")
+                        // //     }
+                        // // ) 
+                        // resultado = palabras.filter(palabra => palabra.length > 5);
+                        // document.write(resultado);
+                    </script>
+                                
+                    <h5>forEach()</h5>
+                    <script>
+                        // // Ejecuta la función indicada de una vez por cada elemento del array
+    
+                        // palabras = ["abecedario","mejilla","beca","cangrejo","piraña"];
+                        
+                        // palabras.forEach(palabras => document.write(palabras + "<br>"))
+                        // palabras.forEach(
+                        //     (palabras) => {
+                        //         document.write(palabras + "<br>")
+                        //     }
+                        // )
+                    </script>
+            </section>
+    
+            <br>
+    
+            <h4 >Objeto math - básico</h4>
+            <section>
+                <h4>Métodos</h4>
+    
+                <h5>sqrt</h5>
+                <script>
+                    // // Devuelve la raiz cuadrada positiva de un número
+                    // numero = Math.sqrt(25);
+                    // document.write(numero);
+                </script>
+    
+                <h5>cbrt</h5>
+                <script>
+                    // // Devuelve la raiz cúbica de un número
+                    // numero = Math.cbrt(25);
+                    // document.write(numero);
+                </script>
+    
+                <h5>max</h5>
+                <script>
+                    // // Devuelve el mayor de cero o mas números
+                    // numero = Math.max(25,10,5,3,69,50,4);
+                    // document.write(numero);
+                </script>
+    
+                <h5>min</h5>
+                <script>
+                    // // Devuelve el más pequeño de cero o mas números
+                    // numero = Math.min(25,5,3,6,4,8,5,6,9,89);
+                    // document.write(numero);
+                </script>
+    
+                <h5>random</h5>
+                <script>
+                    // // Devuelve un número pseudo-aleatorio entre 0 y 1
+                    // numero = Math.random();
+                    // document.write(numero);
+                </script>
+    
+                <h5>round</h5>
+                <script>
+                    // // Devuelve el valor de un número redondeado al número entero mas cercano
+                    // numero = Math.random()*10;
+                    // numero = Math.round(numero);
+                    // document.write(numero);
+                </script>
+    
+                <h5>fround</h5>
+                <script>
+                    // // Devuelve la representación flotante de precisión simple mas cercana de un número
+                    // numero = Math.fround(9.799);
+                    // document.write(numero);
+                </script>
+    
+                <h5>floor</h5>
+                <script>
+                    // // Devuelve el mayor entero menor que o igual a un número
+                    // numero = Math.random()*99;
+                    // numero = Math.floor(numero + 1);
+                    // document.write(numero);
+                </script>
+    
+                <h5>trunc</h5>
+                <script>
+                    // // Devuelve la parte entera del número x, la eliminación de los digitos fraccionarios
+                    // numero = Math.trunc(5.666666);
+                    // document.write(numero);
+                </script>
+    
+                <h4>Propiedades</h4>
+    
+                <h5>PI</h5>
+                <script>
+                    // // Radio de la circunferencia de un circulo respecto a su diametro, aproximadamente 3.1416
+                    // numero = Math.PI;
+                    // document.write(numero);
+                </script>
+    
+                <h5>sqrt1_2</h5>
+                <script>
+                    // // Raiz cuadrada de 1/2; Equivalentemente, 1 sobre la raiz cuadrada de 2, aproximadamente 0.707
+                    // numero = Math.SQRT1_2;
+                    // document.write(numero);
+                </script>
+    
+                <h5>sqrt2</h5>
+                <script>
+                    // // Raiz cuadrada de 2, aproximadamente 1.414
+                    // numero = Math.SQRT2;
+                    // document.write(numero);
+                </script>
+    
+                <!---------------------------------------------------------------------->
+    
+                <h5>E</h5>
+                <script>
+                    // // Constante de Euler, la base de los logaritmos naturales
+                    // numero = Math.E;
+                    // document.write(numero);
+                </script>
+    
+                <h5>LN2</h5>
+                <script>
+                    // // Logaritmo natural de 2
+                    // numero = Math.LN2;
+                    // document.write(numero);
+                </script>
+    
+                <h5>LN10</h5>
+                <script>
+                    // // Logaritmo natural de 10
+                    // numero = Math.LN10;
+                    // document.write(numero);
+                </script>
+    
+                <h5>LOG2E</h5>
+                <script>
+                    // // Logaritmo de E con base 2
+                    // numero = Math.LOG2E;
+                    // document.write(numero);
+                </script>
+    
+                <h5>LOG10E</h5>
+                <script>
+                    // // Logaritmo de E con base 10
+                    // numero = Math.LOG10E;
+                    // document.write(numero);
+                </script>
+            </section>
+        </div>
+
+        <h3 class="cap-1">Capitulo 5 - La consola</h3>
+        <div class="cap-1-consola">
+            <h4>Funciones de registro</h4> 
+            <section>
+                <h5>.assert</h5> <!-- No es estándar, no se recomienda usar -->
+                <script>
+                    // // Aparece mensaje de error en la consola si la afirmación es falsa. Si la afirmación es verdadera, no aparecera nada
+
+                    // console.assert(5 < 4);
+                    // console.assert(5 < 6);
+                </script>
+                
+                <h5>.clear</h5>
+                <script>
+                    // // Limpia la consola
+
+                    // console.clear();
+                </script>
+
+                <h5>.error</h5>
+                <script>
+                    // // Muestra un mensaje de error en la consola
+
+                    // console.error("Este es un error");
+                </script>
+
+                <h5>.info</h5>
+                <script>
+                    // // Emite un mensaje informativo a la consola. En Firefox y chroome, se muestra un pequeño ícono "i" junto a estos elementos en el registro de la Consola.
+
+                    // // No es un mensaje de depuración
+
+                    // console.info("Muy buen trabajo, pero ya no se usa más");
+                </script>
+
+                <h5>.log</h5>
+                <script>
+                    // // Muestra un mensaje en la cosola web (o el intérprete JavaScript)
+
+                    // // Mensaje de depuración
+
+                    // console.log("Muy buen trabajo, pero ya no se usa más");
+                </script>
+
+                <h5>.table</h5>
+                <script>
+                    // // Esta función toma un argumento oblogatorio -> data, que debe ser un array o un onjeto, y un parámetro adicional columns y nos muestra una tabla en la consola-> 
+
+                    // console.table([1,2,3,4,5]);
+                </script>
+
+                <h5>.warn</h5>
+                <script>
+                    // // Imprime un mensaje de advertencia en la consola
+
+                    // console.warn("Esta es una advertencia");
+                </script>
+
+                <h5>.dir</h5> <!-- No es estándar, no se recomienda usar -->
+                <script>
+                    // // Despliega una lista interactiva de las propiedades del objeto JavaScript especificado
+
+                    // console.dir([1,2,3]);
+                </script>
+            </section>
+
+            <br>
+
+            <h4>Funciones de conteo</h4>
+            <section>
+                <h5>.count()</h5>
+                <script>
+                    // // Registra el número de veces que se llama a count(). Esta función toma como argumento pcional una etiqueta
+
+                    // console.count()
+                    
+                    // function sumar(num1,num2){
+                    //     document.write(num1 + num2);
+                    //     console.count();
+                    // }
+
+                    // sumar(2,8);
+                    // sumar(2,8);
+                    // sumar(2,8);
+                    // sumar(2,8);
+                    // sumar(2,8);
+                    // sumar(2,8);
+                    // sumar(2,8);
+                    // sumar(2,8);
+                    // sumar(2,8);
+                </script>
+
+                <h5>.countReset()</h5>
+                <script>
+                    // // Resetea el contador de console.count()
+
+                    // console.countReset();
+                    // sumar(2,8);
+                    // sumar(2,8);
+                    // sumar(2,8);
+                </script>
+
+            </section>
+
+            <br>
+
+            <h4>Funciones de agrupación</h4>
+            <section>
+                <h5>.group</h5>
+                <script>
+                    // // Crea un nuevo grupo en linea en el registro de la consola web
+
+                    // console.group();
+                    // console.log("Manuel");
+                    // console.group("Grupo 2")
+                    // console.log("Alejandro");
+                    // console.group("Grupo a ser eliminado")
+                    // console.log("Poveda");
+                </script>
+
+                <h5>.groupEnd</h5>
+                <script>
+                    // // Remueve un grupo en línea en el registro de la  consola web
+
+                    // console.groupEnd();
+                    // console.log("Grupo eliminado")
+                </script>
+
+                <h5>.groupCollapsed</h5>
+                <script>
+                    // // Crea un grupo en linea pero contraido, el usuario debe expandirlo para verlo
+
+                    // console.groupCollapsed("Grupo cerrado");
+                    // console.log("Este grupo fué abierto");
+                </script>
+            </section>
+
+            <br>
+
+            <h4>Funciones de temporización</h4>
+            <section>
+                <h5>.time()</h5>
+                <script>
+                    // // Inicia un contador 
+
+                    // console.time();
+                </script>
+
+                <h5>.timeLog()</h5>
+                <script>
+                    // // Registra el tiempo transcurrido despues de la última interacción con el contador o función
+
+                    // console.timeLog();
+                </script>
+                
+                <h5>.timeEnd()</h5>
+                <script>
+                    // // Termina el contador y se elimina.
+
+                    // console.timeEnd();
+                </script>
+            </section>
+
+            <br>
+
+            <h4>Estilos del texto</h4>
+            <section>
+                <script>
+                    // console.log("%cManuel","color:#648;background:#000;padding: 10px 100px;border: 1px solid #fff")
+                </script>
+            </section>
+        </div>
+        
+        <h3 class="cap-1">Capitulo 6 - El DOM</h3>
+        <div class="cap-1-dom">
+            <h4>Nodos</h4>
+            <section>
+                <!-- Puede ser cualquier etiqueta del cuerpo, como un parrafo, el body o las etiquetas de una lista -->
+                <h5>Document</h5>
+                <script>
+                    // // Es el nodo raiz, a partir del cual derivan el resto de los nodos
+                    // Document
+                </script>
+                
+                <h5>Element</h5>
+                <script>
+                    // // Nodos definidos por etiquetas html
+                    // Element
+                </script>
+
+                <h5>Text</h5>
+                <script>
+                    // // El texto dentro de un nodo "element" se considera un nodo hijo de tipo texto
+                    // Text
+                </script>
+
+                <h5>Attribute</h5> <!-- Attr -->
+                <script>
+                    // // Los atributos de las etiquetas definen nodos, (En JavaScript no se verán como nodos)
+                    // Attr
+                </script>
+
+                <h5>Comentarios y otros</h5>
+                <script>
+                    // // Los comentarios y otros elementos como las declaraciones DOCTYPE en cabecera
+                    // Comment
+                </script>
+            </section>
+
+            <br>
+
+            <h4>Métodos de selección de elementos</h4>
+            <h4>Document</h4>
+            <section>
+                <!-- Son objetos -->
+                <h5>.getElementById()</h5>
+                <script>
+                    // // Selecciona un elemento por ID
+
+                    // profesores = document.getElementById("tutores");
+                    // document.write(profesores);
+                </script>
+
+                <h5>.getElementsByTagName()</h5>
+                <script>
+                    // // Selecciona todos los elementos que coincidan con el nombre la etiqueta especificada
+                    // // Devuelve una lista de elemenetos pero no es un array
+
+                    // prueba = document.getElementsByTagName("ul");
+                    // document.write(prueba);
+                </script>
+
+                <h5>.querySelector()</h5>
+                <script>
+                    // // Devuelve el primer elemento que coincida con el grupo especificado de selectores
+
+                    // prueba = document.querySelector(".kuepa");
+                    // document.write(prueba);
+                </script>
+
+                <h5>.querySelectorAll()</h5>
+                <script>
+                    // // Devuelve todos los elementos que coincidan con el grupo especificado de selectores 
+                    
+                    // document.querySelectorAll(".kuepa");
+                    // document.write(prueba);
+                </script>
+            </section>
+
+            <br>
+            
+            <h4>Método para definir, obtener y Eliminar valores de atributos</h4>
+            <h4>Elements</h4>
+            <section>
+                <!-- <div>
+                    <form>
+                        <label for="idEdad">
+                            <input class="classEdad" id="idEdad" name="edad">Rango de edad
+                        </label>
+                    </form>
+                </div> -->
+
+                <h5>.setAttribute()</h5>
+                <script>
+                    // // Modifica el valor de un atributo
+
+                    // const edad = document.querySelector(".classEdad");
+                    // edad.setAttribute("type","range");
+                </script>
+                
+                <h5>.getAttribute()</h5>
+                <script>
+                    // // Obtiene el valor de un atributo
+
+                    // valorAtributo = edad.getAttribute("type");
+                    // document.write(valorAtributo);
+                </script>
+
+                <h5>.removeAttribute</h5>
+                <script>
+                    // // Remueve el valor de un atributo
+
+                    // edad.removeAttribute("name");
+                </script>
+            </section>
+            
+            <br>
+            
+            <h4>Atributos Globales</h4>
+            <section>
+                <h5>class</h5>
+                <script>
+                    // // Lista de clases del elemento separadas por espacios
+                </script>
+                
+                <h5>contenteditable</h5>
+                <script>
+                    // // Indica si el elemento puede ser modificable por el usuario (boolean)
+                    capJunior = document.querySelector(".junior");
+                    // capJunior.setAttribute("contenteditable","true")
+                </script>
+
+                <h5>dir</h5>
+                <script>
+                    // // Indica la direccionalidad del texto
+                        // ltr -> LeftToRight
+                        // rtl -> RightToLeft
+                    // capJunior.setAttribute("dir","rtl");
+                </script>
+
+                <h5>hidden</h5>
+                <script>
+                    // // Indica si el elemento aun no es, o ya no es, relevante
+                    // capJunior.getAttribute("hidden");
+                </script>
+                
+                <h5>id</h5>
+                <script>
+                    // // define un identificador único
+                </script>
+
+                <h5>style</h5>
+                <script>
+                    // // Contiene declaraciones con estilo CSS para ser aplicados al elemento
+                </script>
+                
+                <h5>tabindex</h5>
+                <div> <!--Indica el orden del Tab-->
+                    <!-- <a href="" tabindex="1">title</a>
+                    <a href="" tabindex="3">title</a>
+                    <a href="" tabindex="2">title</a> -->
+                </div>
+                <script>
+                    // // Indica si el elemento puede obtener un focus de input
+                    // capJunior.setAttribute("tabindex","0");
+                </script>
+
+                <h5>title</h5>
+                <script>
+                    // // Contiene un texto con onformación relacionada al elemento al que pertenece
+                    // capJunior.setAttribute("title","Nivel junior by Lucas Dalto");
+                </script>
+            </section>
+
+            <br>
+
+            <h4>Atributos de Inputs</h4>
+            <section>
+                <!-- <div>
+                    <form id="formulario">
+                        <input type="text" class="input-normal"> 
+                        <br>
+                        <input type="file" class="img-input-normal"> 
+                        <br>
+                    </form>
+                    <input type="submit" form="formulario"><br>
+                    <script>
+                        const input = document.querySelector(".input-normal");
+                        const file = document.querySelector(".img-input-normal");
+                        document.write(input);
+                    </script>
+                </div> -->
+
+                <h5>className</h5>
+                <script>
+                    // document.write(input.className);                    
+                </script>
+
+                <h5>value</h5>
+                <script>
+                    // document.write(input.value);
+                </script>
+
+                <h5>type</h5>
+                <script>
+                    // input.type = "text";
+                </script>
+
+                <h5>accept</h5>
+                <script>
+                    // file.accept = "image/png";
+                </script>
+
+                <h5>minlength</h5>
+                <script>
+                    // input.minLength = "15";
+                </script>
+
+                <h5>placeholder</h5>
+                <script>
+                    // input.placeholder = "input de prueba";
+                </script>
+
+                <h5>required</h5>
+                <script>
+                    // input.required = " ";
+                </script>
+
+            </section>
+
+            <br>
+
+            <h4>Atributo Style</h4>
+            <section>
+                <script>
+                    // semiSen = document.querySelector(".junior");
+                    // semiSen.style.color = "#117200";
+                </script>
+            </section>
+
+            <br>
+
+            <h4>Clases, classList y métodos de classList</h4>
+            <section>
+                <!-- <h6 class="titulo pequeño">minititulo</h6> -->
+                
+                <h5>.add</h5>
+                <script>
+                    // // Añade una clase
+                    // const tit = document.querySelector(".titulo");
+                    // tit.classList.add("mini-titulo");
+                </script>
+
+                <h5>.remove</h5>
+                <script>
+                    // // Remueve una clase
+                    // tit.classList.remove("pequeño");
+                </script>
+
+                <h5>.item</h5>
+                <script>
+                    // // Devuelve la clase del indice especificado
+                    // valor = tit.classList.item(0);
+                    // document.write(valor);
+                </script>
+
+                <h5>.contains</h5>
+                <script>
+                    // // Verifica si ese elemento posee o no, la clase especificada
+                    // bool = tit.classList.contains("pequeño");
+                    // document.write(bool);
+                </script>
+
+                <h5>.replace</h5>
+                <script>
+                    // // reemplaza una clase por otra
+                    // valor = tit.classList.replace("titulo","titulito");
+                </script>
+
+                <h5>.toggle</h5>
+                <script>
+                    // // Sino tiene la clase especificada, la agrega. Si ya la tiene, la elimina
+                    // valor = tit.classList.toggle("titulo-pequeño");
+
+                    // // Parámetro opcional para forzar "Booleano"
+                    // valor = tit.classList.toggle("titulo-pequeño",true); // Siempre la agrega aun si la tiene
+
+                    // valor = tit.classList.toggle("titulo-pequeño",false); // Siempre la elimina aun si la no la tiene
+                </script>
+            </section>
+
+            <br>
+
+            <h4>Obtención y modificación de elementos</h4>
+            <section>
+                <!-- <p class="titulo" title="Ejemplo para la obtención de elementos">Elemento a <b>modificar</b></p>
+                <script>
+                    const titulo = document.querySelector(".titulo");
+                </script> -->
+
+                <h5>textContent</h5>
+                <script>
+                    // // Devuelve el texto de cualquier nodo // No devuelve html
+                    // let resultado = titulo.textContent;
+                    // alert(resultado);
+                </script>
+
+                <h5>innerText</h5>
+                <script>
+                    // // Devuelve el texto visible de un node element // No es estandar - Funcionalidad para Internet Explorer
+                    // resultado = titulo.innerText;
+                    // document.write(resultado);
+                </script>
+
+                <h5>outerText</h5>
+                <script>
+                    // // Devuelve el texto que de las etiquetas html incluidas las etiquetas ---- No se usa más
+                    // resultado = titulo.outerText;
+                    // document.write(resultado);
+                </script>
+
+                <h5>innerHTML</h5>
+                <script>
+                    // // Devuelve el contenido HTML de un elemento 
+                    // resultado = titulo.innerHTML;
+                    // alert(resultado);
+                </script>
+
+                <h5>outerHTML</h5>
+                <script>
+                    // // devuelve el código HTML completo del elemento incluyendo el de los atributos
+                    // resultado = titulo.innerHTML;
+                    // alert(resultado);
+                </script>
+            </section>
+
+            <br>
+
+            <h4>Creación de elementos</h4>
+            <section>
+                <div class="contenedor">
+                    <h4>Titulo normal</h4>
+                    <h6>Subtitulo normal</h6>
+                    <p>parrafo simple</p>
+                </div>
+
+                <h5>.createElement()</h5>
+                <script>
+                    const contenedor = document.querySelector(".contenedor");
+                    const item = document.createElement("LI");
+                    console.log(item);
+                </script>
+
+                <h5>.createTextNode()</h5>
+                <script>
+                    const textNode = document.createTextNode("Este es un item de la lista");
+                    console.log(textNode);
+                </script>
+
+                <h5>.createDocumentFragment()</h5>
+                <script>
+                    const frag = document.createDocumentFragment();
+
+                    for (i = 0; i < 5; i++){
+                        const item = document.createElement("LI");
+                        item.innerHTML = "Item de la lista";
+                        frag.appendChild(item);
+                    }
+                    console.log(frag);
+                    contenedor.appendChild(frag);
+                </script>
+            </section>
+
+            <br>
+
+            <h4>Obtención y modificación de childs (hijos)</h4>
+            <section>
+                <h5>.firstChild()</h5>
+                <script>
+                    // // Obtiene el primer hijo
+                    // const primerHijo = contenedor.firstChild;
+                    // console.log(primerHijo);
+                </script>
+
+                <h5>.lastChild()</h5>
+                <script>
+                    // // Obtiene el último hijo
+                    // const ultimoHijo = contenedor.lastChild;
+                    // console.log(ultimoHijo);
+                </script>
+
+                <h5>.firstElementChild()</h5>
+                <script>
+                    // // Obtiene el primer elemento hijo
+                    // const elemenntHijo = contenedor.firstElementChild;
+                    // console.log(elemenntHijo);
+                </script>
+
+                <h5>.lastElementChild()</h5>
+                <script>
+                    // // Obtiene el ultimo elemento hijo
+                    //  elementHijo = contenedor.lastElementChild;
+                    // console.log(elementHijo);
+                </script>
+
+                <h5>.childNodes()</h5>
+                <script>
+                    // // Obtiene el Node List
+                    // hijos = contenedor.childNodes;
+                    // console.log(hijos);
+
+                    // hijos.forEach(hijo => console.log(hijo));
+                </script>
+
+                <h5>.children()</h5>
+                <script>
+                    // // No devuelve los nodos del texto, solo devuelve las etiquetas html
+                    // hijos = contenedor.children;
+                    // console.log(hijos);
+
+                    // for (hijo of hijos){
+                    //     console.log(hijo);
+                    // }
+                </script>
+            </section>
+
+            <h4>Métodos de childs (hijos)</h4>
+            <section>
+                <!-- <div class="contenedor">
+                    <h2 class="h2_antiguo">Titulo normal</h2>
+                    <h4 class="h4_antiguo">titulo 2</h4>
+                    <p class="parrafo_antiguo">parrafo</p>
+                </div>
+                <script>
+                    const contenedor = document.querySelector(".contenedor");
+                    h4_antiguo = document.querySelector(".h4_antiguo");
+                    const h2_nuevo = document.createElement("H2");
+                    const parrafo = document.createElement("P").innerHTML = ("parrafo");
+
+                    h2_nuevo.innerHTML = "Titulo generado";
+
+                    h2_antiguo = document.querySelector(".h2_antiguo");
+                </script> -->
+
+                <h5>.appendChild()</h5>
+                <script>
+                    // const h2 = document.createElement("H2");
+                    // const parrafo = document.createElement("P");
+                    // h2.appendChild(parrafo);
+                    // contenedor.appendChild(h2);
+                </script>
+
+                <h5>.replaceChild()</h5>
+                <script>
+                    // contenedor.replaceChild(h2_nuevo,h2_antiguo)
+                </script>
+
+                <h5>.removeChild()</h5>
+                <script>
+                    // contenedor.removeChild(h4_antiguo);
+                </script>
+
+                <h5>.hasChildNodes()</h5>
+                <script>
+                    // respuesta = h2_nuevo.hasChildNodes();
+                    // if (respuesta){
+                    //     document.write("El elemento SI tiene hijos");
+                    // } else {
+                    //     document.write("El elemento NO tiene hijos");
+                    // }
+                </script>
+            </section> 
+
+            <h4>Propiedades de parents(padres)</h4>
+            <section>
+                <!-- <div class="contenedor">
+                    <h2 class="h2_a">h2</h2>
+                    <h4>h4</h4>
+                    <p>parrafo</p>
+                </div>
+                <script>
+                    const h2 = document.querySelector(".h2_a");
+                </script> -->
+                <h5>.parentElement</h5>
+                <script>
+                    // // Elige el padre elemento de un elemento - Busca un Nodo padre como etiqueta HTML
+                    // console.log(h2.parentElement);
+                </script>
+
+                <h5>.parentNode</h5>
+                <script>
+                    // // Elige el padre de un elemento - Busca un nodo padre
+                    // console.log(h2.parentNode);
+                </script>
+            </section>
+
+            <h4>Propiedades de Siblings (Hermanos)</h4>
+            <section>
+                <!-- <div class="contenedor">
+                    <h4>h4</h4>
+                    <h2 class="h2_a">h2</h2>
+                    <p>parrafo</p>
+                </div>
+                <script>
+                    const contenedor = document.querySelector(".contenedor");
+                    const h2 = document.querySelector(".h2_a");
+                </script> -->
+
+                <h5>nextSibling</h5>
+                <script>
+                    // console.log(h2.nextSibling);
+                </script>
+
+                <h5>previousSibling</h5>
+                <script>
+                    // console.log(h2.previousSibling);
+                </script>
+
+                <h5>nextElementSibling</h5>
+                <script>
+                    // console.log(h2.nextElementSibling);
+                </script>
+
+                <h5>previousElementSibling</h5>
+                <script>
+                    // console.log(h2.previousElementSibling);
+                </script>
+            </section>
+
+            <br>
+
+            <h4>Nodos - Extras</h4>
+            <section>
+                <!-- <div class="div">
+                    Div 1
+                    <div class="div">
+                        Div 2
+                        <div class="div-3">
+                            Div 3
+                        </div>
+                    </div>
+                </div> -->
+
+                <h5>closest</h5>
+                <script>
+                    // // Selecciona el elemento ascendente o padre mas cercano
+                    // const div = document.querySelector(".div-3");
+
+                    // console.log(div.closest(".div"));
+                </script>
+            </section>
+        </div>
+    </article>
+        
+    <hr> <h2 class="semiSenior">Nivel Semi Senior</h2> <hr>
+    <article>
+        <h3 class="cap-2">Capitulo 7 - Window</h3>
+        <div>
+            <h4>Objeto Window</h4>
+            <!-- Es la mas alta jerarquia - Hereda las propiedades de EventTarget -->
+            <section>
+                <h5>open()</h5>
+                <script>
+                    // // Carga un recurso en el contexto de un nuevo navegador o uno que ya existe
+                    // googleURL = "https://www.google.com"
+                    // ventana = window.open(googleURL);
+                </script>
+                
+                <h5>close()</h5>
+                <script>
+                    // // Cierra la ventana actual, o la ventana en la que se llanó
+                    // ventana.close();
+                </script>
+
+                <h5>closed</h5>
+                <script>
+                    // // Indica si la ventana rederenciada está cerrada o no
+                    // console.log(ventana.closed);
+                </script>
+
+                <h5>stop()</h5>
+                <script>
+                    // // Detiene y establece el nombre del contexto de navegación actual
+                    // ventana.stop();
+                </script>
+
+                <h5>alert()</h5>
+                <script>
+                    // // Muestra un cuadro de alerta con el contenido especificado y un boton aceptar
+                    // window.alert("Manuel");
+                </script>
+
+                <h5>print()</h5>
+                <script>
+                    // // Abre el cuadro de dialogo "Imprimir" para imprimir el documento actual
+
+                    // print();
+                </script>
+
+                <h5>prompt()</h5>
+                <script>
+                    // // Abre un cuadro de dialogo con un mensaje que solicita el usuario - un dato string
+                    // prompt("");
+                </script>
+
+                <h5>confirm()</h5>
+                <script>
+                    // // Abre un cuadro de dialogo con un mensaje y dos botones: Aceptar - Cancelar
+                    // window.confirm("");
+                </script>
+
+                <br>
+
+                <!-- Propiedades de lectura -->
+                <h5>screen</h5>
+                <script>
+                    // // Devuelve una referencia al objeto de pantalla asociado con la ventana
+                    // screen = window.screen;
+                    // console.log(screen);
+                    // document.write(screen.availHeight);
+                    // document.write(screen);
+                </script>
+
+                <h5>screenleft</h5>
+                <script>
+                    // // Devuelve la distancia horizontal entre el borde izquierdo del navegador y el borde izquierdo de la pantalla
+                    // screenLeft = window.screenLeft;
+                    
+                    // document.write(`left: <b>${screenLeft}</b>`);
+                </script>
+
+                <h5>screentop</h5>
+                <script>
+                    // // Devuelve la distancia vertical entre el borde superior del navegador y el borde superior de la pantalla
+                    screenTop = window.screenTop;
+
+                    // document.write(`Top: <b>${screenTop}</b>`);
+                </script>
+
+                <h5>scrollX</h5>
+                <script>
+                    // // Devuelve el numero de pixeles que el documento se desplaza actualmente, de forma horizontal
+                    // scrollX = window.scrollX;
+
+                    // document.write(scrollX);
+                </script>
+
+                <h5>scrollY</h5>
+                <script>
+                    // // Devuelve el numero de pixeles que el documento se desplaza actualmente, de forma vertical
+                    // scrollY = window.scrollY;
+
+                    // document.write(scrollY);
+                </script>
+
+                <h5>scroll()</h5>
+                <script>
+                    // // Desplaza la ventana a un ligar en particular en el documento(con options y con posiciones)
+                    // window.scroll(0,3540);
+                </script>
+
+                <br>
+
+                <h5>resizeBy()</h5>
+                <script>
+                    // ventana = window.open("https://www.google.com")
+                </script>
+
+                <script>
+                    // // Cambia el tamaño de la ventana actual en una cantidad específica
+
+                    // ventana.resizeBy(200,400);
+                </script>
+
+                <h5>resizeTo()</h5>
+                <script>
+                    // // Rendimensiona dinámicamente la ventana
+
+                    // ventana.resizeTo(200,400);
+                </script>
+
+                <h5>moveBy()</h5>
+                <script>
+                    // // Mueve la ventana en una ubicación relativa
+
+                    // ventana.moveBy(100,200);
+                </script>
+
+                <h5>moveTo()</h5>
+                <script>
+                    // // Mueve la ventana en una ubicación absoluta
+
+                    // ventana.moveTo(100,200);
+                </script>
+
+                <br>
+
+                <b>Objetos barpro</b>
+
+                <h5>locationbar</h5>
+                <script>
+                    // console.log(window.locationbar.visible);
+                </script>
+
+                <h5>menubar</h5>
+                <script>
+                    // console.log(window.menubar.visible);
+                </script>
+
+                <h5>personalbar</h5>
+                <script>
+                    // console.log(window.personalbar.visible);
+                </script>
+
+                <h5>scrollbars</h5>
+                <script>
+                    // console.log(window.scrollbars.visible);
+                </script>
+
+                <h5>statusbar</h5>
+                <script>
+                    // console.log(window.statusbar.visible);
+                </script>
+
+                <h5>toolbar</h5>
+                <script>
+                    // console.log(window.toolbar.visible);
+                </script>
+
+                <br>
+
+                <h4>Location</h4>
+
+                <h5>window.location.href</h5>
+                <script>
+                    // // Devuelve el href de la página actual
+                    // console.log(window.location.href);
+                </script>
+
+                <h5>window.location.hostname</h5>
+                <script>
+                    // // Devuelve el nombre deñ dominio del servidor web
+                    // console.log(window.location.hostname);
+                </script>
+
+                <h5>window.location.pathname</h5>
+                <script>
+                    // // Devuelve la ruta y el nombre de archivo de la página actual
+                    // console.log(window.location.pathname);
+                </script>
+
+                <h5>window.location.protocol</h5>
+                <script>
+                    // // Devuelve el protocolo web utilizado (https - http)
+                    // console.log(window.location.protocol);
+                </script>
+
+                <h5>window.location.assign((</h5>
+                <script>
+                    // // Carga un nuevo documento
+                    // console.log(window.location.assign);
+                </script>
+            </section>            
+        </div>
+
+        <h3 class="cap-2 gdt">Capitulo 8 - Google Developer Tools</h3>
+        <p>Heramientas de desarrollo del navegador Chrome</p>
+        <div>
+            <h4>Pestaña Elements</h4>
+            <section>
+                <h5>Filtros y buscar por palabras claves</h5>
+                <h5>Modificar, Crear y Eliminar etiquetas</h5>
+                <h5>Modificar propiedades de css</h5>
+                <h5>Event Listener</h5>
+                <h5>Properties</h5>
+                <h5>Opciones para copiar</h5>
+                <h5>Seguir explorando</h5>
+            </section>
+            
+            <br>
+
+            <h4>Pestaña Resources</h4>
+            <section>
+                <h5>Ver y guardar archivos</h5>
+                <h5>Información ofrecida</h5>
+                <h5>Cambios en tiempo real</h5>
+                <h5>Snippets - ejecutar código por fragmentos</h5>
+            </section>
+
+            <br>
+
+            <h4>Pestaña Networks</h4>
+            <section>
+                <h5>Interfaz</h5>
+                <h5>Sort by y filtros de búsqueda</h5>
+                <h5>Limpiar cookies y caché</h5>
+                <h5>Importar y exportar</h5>
+            </section>
+
+            <br>
+
+            <h4>Pestaña Timeline / Performance</h4>
+            <section>
+                <h5>Uso y grabación</h5>
+                <h5>Screenshots de la grabación</h5>
+                <h5>Controls</h5>
+                <h5>Importar y Exportar</h5>
+
+                <h5>Flame Chart</h5>
+                <h5>Details</h5>
+                <h5>Sugerencias de grabación</h5>
+            </section>
+
+            <br>
+
+            <h4>Pestaña Aplication</h4>
+            <section>
+                <h5>Filtros y buscar por palabras claves</h5>
+                <h5>Modificar, Crear y Eliminar etiquetas</h5>
+                <h5>Modificar propiedades de css</h5>
+                <h5>Event Listener</h5>
+                <h5>Properties</h5>
+                <h5>Opciones para copiar</h5>
+                <h5>Seguir explorando</h5>
+            </section>
+        </div>
+    </article>
+
+</body>
+<script src="dalto.js"></script>
+</html>
