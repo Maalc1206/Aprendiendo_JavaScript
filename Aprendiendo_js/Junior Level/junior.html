@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning JavaScript GG</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Aprendiendo JavaScript con Lucas Dalto</h1>
-    <ul id="tutores" class="kuepa">
-        <li><a href="German_Gomez.html">Tutor Germán Gómez</a></li>
-        <li><a href="Luis_Laiton.html">Tutor Luis Laiton</a></li>
-    </ul>
+    <h1>Aprendiendo JavaScript</h1>
 
-    <hr> <h2 class="junior" title="Junior">Nivel Junior</h2> <hr>
-    <article>
-        <h3 class="cap-1">Capitulo 1 - Introducción</h3>
+    <h2 class="junior" title="Junior">Nivel Junior</h2>
+    <article class="nivel_junior">
+
+        <h3 id="intro" class="cap-1">Capitulo 1 - Introducción</h3>
         <div class="cap-1-intro">  
             <h4>Tipos de datos</h4> <br>
             <section>
@@ -330,7 +328,7 @@
             </section>
         </div>
     
-        <h3 class="cap-1">Capitulo 2 - Arrays</h3>
+        <h3 id="array" class="cap-1">Capitulo 2 - Arrays</h3>
         <div class="cap-1-array">
             <h4>Arrays</h4>
             <section>
@@ -528,7 +526,7 @@
 
         </div>
     
-        <h3 class="cap-1">Capitulo 3 - POO</h3>
+        <h3 id="poo" class="cap-1">Capitulo 3 - POO</h3>
         <div class="cap-1-poo">
             <h4>Programación Orientada a Objetos</h4>
             <section>
@@ -683,7 +681,7 @@
             </section>
         </div>
     
-        <h3 class="cap-1">Capitulo 4 - Métodos de cadena</h3>
+        <h3 id="metCadena" class="cap-1">Capitulo 4 - Métodos de cadena</h3>
         <div class="cap-1-metCadena">
             <h4>Métodos de cadena</h4>
             <section>
@@ -1161,7 +1159,7 @@
             </section>
         </div>
 
-        <h3 class="cap-1">Capitulo 5 - La consola</h3>
+        <h3 id="consola" class="cap-1">Capitulo 5 - La consola</h3>
         <div class="cap-1-consola">
             <h4>Funciones de registro</h4> 
             <section>
@@ -1334,7 +1332,7 @@
             </section>
         </div>
         
-        <h3 class="cap-1">Capitulo 6 - El DOM</h3>
+        <h3 id="dom" class="cap-1">Capitulo 6 - El DOM</h3>
         <div class="cap-1-dom">
             <h4>Nodos</h4>
             <section>
@@ -1884,281 +1882,7 @@
             </section>
         </div>
     </article>
-        
-    <hr> <h2 class="semiSenior">Nivel Semi Senior</h2> <hr>
-    <article>
-        <h3 class="cap-2">Capitulo 7 - Window</h3>
-        <div>
-            <h4>Objeto Window</h4>
-            <!-- Es la mas alta jerarquia - Hereda las propiedades de EventTarget -->
-            <section>
-                <h5>open()</h5>
-                <script>
-                    // // Carga un recurso en el contexto de un nuevo navegador o uno que ya existe
-                    // googleURL = "https://www.google.com"
-                    // ventana = window.open(googleURL);
-                </script>
-                
-                <h5>close()</h5>
-                <script>
-                    // // Cierra la ventana actual, o la ventana en la que se llanó
-                    // ventana.close();
-                </script>
-
-                <h5>closed</h5>
-                <script>
-                    // // Indica si la ventana rederenciada está cerrada o no
-                    // console.log(ventana.closed);
-                </script>
-
-                <h5>stop()</h5>
-                <script>
-                    // // Detiene y establece el nombre del contexto de navegación actual
-                    // ventana.stop();
-                </script>
-
-                <h5>alert()</h5>
-                <script>
-                    // // Muestra un cuadro de alerta con el contenido especificado y un boton aceptar
-                    // window.alert("Manuel");
-                </script>
-
-                <h5>print()</h5>
-                <script>
-                    // // Abre el cuadro de dialogo "Imprimir" para imprimir el documento actual
-
-                    // print();
-                </script>
-
-                <h5>prompt()</h5>
-                <script>
-                    // // Abre un cuadro de dialogo con un mensaje que solicita el usuario - un dato string
-                    // prompt("");
-                </script>
-
-                <h5>confirm()</h5>
-                <script>
-                    // // Abre un cuadro de dialogo con un mensaje y dos botones: Aceptar - Cancelar
-                    // window.confirm("");
-                </script>
-
-                <br>
-
-                <!-- Propiedades de lectura -->
-                <h5>screen</h5>
-                <script>
-                    // // Devuelve una referencia al objeto de pantalla asociado con la ventana
-                    // screen = window.screen;
-                    // console.log(screen);
-                    // document.write(screen.availHeight);
-                    // document.write(screen);
-                </script>
-
-                <h5>screenleft</h5>
-                <script>
-                    // // Devuelve la distancia horizontal entre el borde izquierdo del navegador y el borde izquierdo de la pantalla
-                    // screenLeft = window.screenLeft;
-                    
-                    // document.write(`left: <b>${screenLeft}</b>`);
-                </script>
-
-                <h5>screentop</h5>
-                <script>
-                    // // Devuelve la distancia vertical entre el borde superior del navegador y el borde superior de la pantalla
-                    screenTop = window.screenTop;
-
-                    // document.write(`Top: <b>${screenTop}</b>`);
-                </script>
-
-                <h5>scrollX</h5>
-                <script>
-                    // // Devuelve el numero de pixeles que el documento se desplaza actualmente, de forma horizontal
-                    // scrollX = window.scrollX;
-
-                    // document.write(scrollX);
-                </script>
-
-                <h5>scrollY</h5>
-                <script>
-                    // // Devuelve el numero de pixeles que el documento se desplaza actualmente, de forma vertical
-                    // scrollY = window.scrollY;
-
-                    // document.write(scrollY);
-                </script>
-
-                <h5>scroll()</h5>
-                <script>
-                    // // Desplaza la ventana a un ligar en particular en el documento(con options y con posiciones)
-                    // window.scroll(0,3540);
-                </script>
-
-                <br>
-
-                <h5>resizeBy()</h5>
-                <script>
-                    // ventana = window.open("https://www.google.com")
-                </script>
-
-                <script>
-                    // // Cambia el tamaño de la ventana actual en una cantidad específica
-
-                    // ventana.resizeBy(200,400);
-                </script>
-
-                <h5>resizeTo()</h5>
-                <script>
-                    // // Rendimensiona dinámicamente la ventana
-
-                    // ventana.resizeTo(200,400);
-                </script>
-
-                <h5>moveBy()</h5>
-                <script>
-                    // // Mueve la ventana en una ubicación relativa
-
-                    // ventana.moveBy(100,200);
-                </script>
-
-                <h5>moveTo()</h5>
-                <script>
-                    // // Mueve la ventana en una ubicación absoluta
-
-                    // ventana.moveTo(100,200);
-                </script>
-
-                <br>
-
-                <b>Objetos barpro</b>
-
-                <h5>locationbar</h5>
-                <script>
-                    // console.log(window.locationbar.visible);
-                </script>
-
-                <h5>menubar</h5>
-                <script>
-                    // console.log(window.menubar.visible);
-                </script>
-
-                <h5>personalbar</h5>
-                <script>
-                    // console.log(window.personalbar.visible);
-                </script>
-
-                <h5>scrollbars</h5>
-                <script>
-                    // console.log(window.scrollbars.visible);
-                </script>
-
-                <h5>statusbar</h5>
-                <script>
-                    // console.log(window.statusbar.visible);
-                </script>
-
-                <h5>toolbar</h5>
-                <script>
-                    // console.log(window.toolbar.visible);
-                </script>
-
-                <br>
-
-                <h4>Location</h4>
-
-                <h5>window.location.href</h5>
-                <script>
-                    // // Devuelve el href de la página actual
-                    // console.log(window.location.href);
-                </script>
-
-                <h5>window.location.hostname</h5>
-                <script>
-                    // // Devuelve el nombre deñ dominio del servidor web
-                    // console.log(window.location.hostname);
-                </script>
-
-                <h5>window.location.pathname</h5>
-                <script>
-                    // // Devuelve la ruta y el nombre de archivo de la página actual
-                    // console.log(window.location.pathname);
-                </script>
-
-                <h5>window.location.protocol</h5>
-                <script>
-                    // // Devuelve el protocolo web utilizado (https - http)
-                    // console.log(window.location.protocol);
-                </script>
-
-                <h5>window.location.assign((</h5>
-                <script>
-                    // // Carga un nuevo documento
-                    // console.log(window.location.assign);
-                </script>
-            </section>            
-        </div>
-
-        <h3 class="cap-2 gdt">Capitulo 8 - Google Developer Tools</h3>
-        <p>Heramientas de desarrollo del navegador Chrome</p>
-        <div>
-            <h4>Pestaña Elements</h4>
-            <section>
-                <h5>Filtros y buscar por palabras claves</h5>
-                <h5>Modificar, Crear y Eliminar etiquetas</h5>
-                <h5>Modificar propiedades de css</h5>
-                <h5>Event Listener</h5>
-                <h5>Properties</h5>
-                <h5>Opciones para copiar</h5>
-                <h5>Seguir explorando</h5>
-            </section>
-            
-            <br>
-
-            <h4>Pestaña Resources</h4>
-            <section>
-                <h5>Ver y guardar archivos</h5>
-                <h5>Información ofrecida</h5>
-                <h5>Cambios en tiempo real</h5>
-                <h5>Snippets - ejecutar código por fragmentos</h5>
-            </section>
-
-            <br>
-
-            <h4>Pestaña Networks</h4>
-            <section>
-                <h5>Interfaz</h5>
-                <h5>Sort by y filtros de búsqueda</h5>
-                <h5>Limpiar cookies y caché</h5>
-                <h5>Importar y exportar</h5>
-            </section>
-
-            <br>
-
-            <h4>Pestaña Timeline / Performance</h4>
-            <section>
-                <h5>Uso y grabación</h5>
-                <h5>Screenshots de la grabación</h5>
-                <h5>Controls</h5>
-                <h5>Importar y Exportar</h5>
-
-                <h5>Flame Chart</h5>
-                <h5>Details</h5>
-                <h5>Sugerencias de grabación</h5>
-            </section>
-
-            <br>
-
-            <h4>Pestaña Aplication</h4>
-            <section>
-                <h5>Filtros y buscar por palabras claves</h5>
-                <h5>Modificar, Crear y Eliminar etiquetas</h5>
-                <h5>Modificar propiedades de css</h5>
-                <h5>Event Listener</h5>
-                <h5>Properties</h5>
-                <h5>Opciones para copiar</h5>
-                <h5>Seguir explorando</h5>
-            </section>
-        </div>
-    </article>
-
+    
 </body>
-<script src="dalto.js"></script>
+<script src="main.js"></script>
 </html>

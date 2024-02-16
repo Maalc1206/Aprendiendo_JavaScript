@@ -4,12 +4,13 @@
     font-family: sans-serif;
     list-style: none;
     text-decoration: none;
+    text-align: center;
 }
 
 body{
     padding: 30px;
-    background: #B2BABB;
     user-select: none;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/leaves.png);
 }
 
 h1,h2,h3{
@@ -24,12 +25,24 @@ h1,h2,h3{
     color: #0C47A0;
 }
 .cap-1{
+    background: #ffffff;
+    border: solid 1px #000;
     color: #0B4208;
+    margin: 5px;
+}
+.cap-1:hover{
+    border: solid 1px #3b3b3b;
+    color: #089c00;
+    background: #000;
 }
 .cap-2{
     color: #1A5276;
 }
 
+/* Contenido oculto junior */
+.cap-1-intro, .cap-1-array, .cap-1-poo, .cap-1-metCadena, .cap-1-consola, .cap-1-dom{
+    display: none;
+}
 :root{
     --yt: #f00;
 }
@@ -80,4 +93,11 @@ p{
     font-size: 14px;
     font-weight: bold;
     text-align: center;
+}
+.nivel_junior {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
