@@ -10,39 +10,35 @@
 body{
     padding: 30px;
     user-select: none;
-    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/leaves.png);
+    background-image:url(https://www.toptal.com/designers/subtlepatterns/uploads/bush.png);
 }
 
 h1,h2,h3{
     text-align: center;
     padding: 10px;
 }
-
-.junior{
+.semiSenior{
     font-size: 30px;
-    color: #0A7C02;
+    color: #0C47A0;
 }
-.cap-1{
+.cap-2{
     background: transparent;
     color: #0B4208;
     margin: 5px;
     border-radius: 28px;
     cursor: pointer;
 }
-.cap-1:hover{
-    color: #089c00;
+.cap-2:hover{
+    color: #3498DB;
     background: #000;
 }
 .cap-2{
     color: #1A5276;
 }
 
-/* Contenido oculto junior */
-.cap-1-intro, .cap-1-array, .cap-1-poo, .cap-1-metCadena, .cap-1-consola, .cap-1-dom{
+/* Contenido oculto semiSenior */
+.cap-2-window, .cap-2-console{
     display: none;
-}
-:root{
-    --yt: #f00;
 }
 
 ul{
@@ -62,10 +58,16 @@ a{
 .activity{
     color: #005AE1;
 }
-a:hover{
-    color: #750E98;
-}
 
+th{
+    padding: 3px;
+}
+td{
+    padding: 3px;
+}
+hr{
+    margin: 5px 0px;
+}
 .mini-titulo{
     color: #005AE1;
 }
@@ -80,7 +82,7 @@ p{
     font-weight: bold;
     text-align: center;
 }
-.nivel_junior {
+.nivel_semisenior {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -89,12 +91,12 @@ p{
 }
 
 .home_btn{
-    color: #0A7C02;
+    color: #0C47A0;
     font-size: 40px;
     text-shadow: 0px 0px 15px #000;
 }
 .home_btn:hover{
-    text-shadow: 0px 0px 20px #0A7C02;
+    text-shadow: 0px 0px 20px #0C47A0;
     color: #000;
     font-size: 40px;
 }
