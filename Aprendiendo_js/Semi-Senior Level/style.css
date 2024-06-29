@@ -17,6 +17,25 @@ h1,h2,h3{
     text-align: center;
     padding: 10px;
 }
+
+.ej_link{
+    font-weight: bold;
+    color: #fff;
+    border-radius: 28px;
+    margin: 5px;
+    padding: 7px;
+    background: #3498DB;
+    transition-duration: .5s;
+}
+.ej_link:hover{
+    color: #3498DB;
+    outline: solid 1px #3498DB;
+    background: #fff;
+}
+.ej_link:active{
+    box-shadow: 0px 0px 20px #3498DB;
+}
+
 .semiSenior{
     font-size: 30px;
     color: #0C47A0;
@@ -27,10 +46,21 @@ h1,h2,h3{
     margin: 5px;
     border-radius: 28px;
     cursor: pointer;
+    transition-duration: .5s;
 }
 .cap-2:hover{
     color: #3498DB;
     background: #000;
+}
+.cap-2:active{
+    color: #3498DB;
+    background: #000;
+    box-shadow: 0px 0px 20px #3498DB;
+}
+.cap-2:active{
+    color: #3498DB;
+    background: #000;
+    box-shadow: 0px 0px 20px #3498DB;
 }
 .cap-2{
     color: #1A5276;
@@ -47,29 +77,13 @@ ul{
     height: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 a{
     font-weight: bolder;
     color: #0C47A0;
     transition: .5s;
-}
-.activity{
-    color: #005AE1;
-}
-
-th{
-    padding: 3px;
-}
-td{
-    padding: 3px;
-}
-hr{
-    margin: 5px 0px;
-}
-.mini-titulo{
-    color: #005AE1;
 }
 b{
     font-weight: bold;
@@ -93,9 +107,8 @@ p{
 .home_btn{
     color: #0C47A0;
     font-size: 40px;
-    text-shadow: 0px 0px 15px #000;
 }
-.home_btn:hover{
+.home_btn:active{
     text-shadow: 0px 0px 20px #0C47A0;
     color: #000;
     font-size: 40px;

@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     background-color: #f0f0f0;
     user-select: none;
     background-image: url("https://www.toptal.com/designers/subtlepatterns/uploads/carbon_fibre.png");
@@ -41,62 +41,77 @@ h1 {
     0%{
         color: #C0392B;
         text-shadow: 0px 0px 30px #C0392B;
+        transform: scaleX(1.1) scaleY(1.1);
     }
     7.14%{
         color: #C0392B;
         text-shadow: 0px 0px 30px #C0392B;
+        transform: scaleX(1) scaleY(1);
     }
     14.28%{
         color: #E74C3C;
         text-shadow: 0px 0px 30px #E74C3C;
+        transform: scaleX(1.1) scaleY(1.1);
     }
     21.42%{
         color: #9B59B6;
         text-shadow: 0px 0px 30px #9B59B6;
+        transform: scaleX(1) scaleY(1);
     }
     28.56%{
         color: #8E44AD;
         text-shadow: 0px 0px 30px #8E44AD;
+        transform: scaleX(1.1) scaleY(1.1);
     }
     35.7%{
         color: #2980B9;
         text-shadow: 0px 0px 30px #2980B9;
+        transform: scaleX(1) scaleY(1);
     }
     42.84%{
         color: #3498DB;
         text-shadow: 0px 0px 30px #3498DB;
+        transform: scaleX(1.1) scaleY(1.1);
     }
     49.98%{
         color: #1ABC9C;
         text-shadow: 0px 0px 30px #1ABC9C;
+        transform: scaleX(1) scaleY(1);
     }
     57.12%{
         color: #16A085;
         text-shadow: 0px 0px 30px #16A085;
+        transform: scaleX(1.1) scaleY(1.1);
     }
     64.26%{
         color: #27AE60;
         text-shadow: 0px 0px 30px #27AE60;
+        transform: scaleX(1) scaleY(1);
     }
     71.4%{
         color: #2ECC71;
         text-shadow: 0px 0px 30px #2ECC71;
+        transform: scaleX(1.1) scaleY(1.1);
     }
     78.54%{
         color: #F1C40F;
         text-shadow: 0px 0px 30px #F1C40F;
+        transform: scaleX(1) scaleY(1);
     }
     85.68%{
         color: #F39C12;
         text-shadow: 0px 0px 30px #F39C12;
+        transform: scaleX(1.1) scaleY(1.1);
     }
     92.82%{
         color: #E67E22;
         text-shadow: 0px 0px 30px #E67E22;
+        transform: scaleX(1) scaleY(1);
     }
     99.96%{
         color: #D35400;
         text-shadow: 0px 0px 30px #D35400;
+        transform: scaleX(1.1) scaleY(1.1);
     }
 }
 
@@ -121,30 +136,36 @@ a {
 
 .link_1{
     background: #F1C40F;
-    box-shadow: 0px 0px 30px #F1C40F;
 }
 .link_1:hover{
     background: #D5D8DC;
     color: #F1C40F;
     outline: 3px solid#F1C40F;
 }
+.link_1:active{
+    box-shadow: 0px 0px 30px #F1C40F;
+}
 .link_2{
     background: #3498DB;
-    box-shadow: 0px 0px 30px #3498DB;
 }
 .link_2:hover{
     background: #D5D8DC;
     color: #3498DB;
     outline: 3px solid#3498DB;
 }
+.link_2:active{
+    box-shadow: 0px 0px 30px #3498DB;
+}
 .link_3{
     background: #C0392B;
-    box-shadow: 0px 0px 30px #C0392B;
 }
 .link_3:hover{
     background: #D5D8DC;
     color: #C0392B;
     outline: 3px solid#C0392B;
+}
+.link_3:active{
+    box-shadow: 0px 0px 30px #C0392B;
 }
 
 .btn_container {
