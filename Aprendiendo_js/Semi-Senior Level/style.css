@@ -5,6 +5,7 @@
     list-style: none;
     text-decoration: none;
     text-align: center;
+    border: none;
 }
 
 body{
@@ -112,4 +113,58 @@ p{
     text-shadow: 0px 0px 20px #0C47A0;
     color: #000;
     font-size: 40px;
+}
+
+.btn, .button{
+    font-weight: bold;
+    color: #fff;
+    border-radius: 28px;
+    margin: 5px;
+    padding: 7px;
+    background: #0C47A0;
+    transition-duration: .5s;
+}
+.btn:hover, .button:hover{
+    color: #0C47A0;
+    outline: solid 1px #0C47A0;
+    background: #fff;
+}
+.btn:active, .button:active{
+    box-shadow: 0px 0px 20px #0C47A0;
+}
+
+.contenedor_1{
+    padding: 5px;
+    background: #0c45A0;
+    margin: 5px 0px;
+}
+
+.contenedor_2{
+    padding: 5px;
+    background: #3498DB;
+}
+
+.boton{
+    padding: 5px;
+}
+
+.bt{
+    font-weight: bold;
+    color: #fff;
+    border-radius: 28px;
+    margin: 5px;
+    padding: 7px;
+    background: #0C47A0;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+.bt:hover{
+    color: #0C47A0;
+    outline: solid 1px #0C47A0;
+    background: #fff;
+    box-shadow: 0px 0px 20px #0C47A0;
+}
+
+.otro{
+    margin: 10px 0px;
 }

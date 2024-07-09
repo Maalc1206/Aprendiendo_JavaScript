@@ -296,18 +296,172 @@
 
         <h3 class="cap-2 eventos">Capitulo 9 - Eventos</h3>
         <div class="cap-2-events">
-            <h4></h4>
+            <h4>Eventos</h4>
             <section>
-                <h5></h5>
-                <script></script>
+              <button class="btn" onclick="alert('Soy un EventHandler')">EventHandler</button>
+              <script>
+                // const btn = document.querySelector(".btn");
+                // btn.onclick = ()=>{
+                //   alert("Soy un evento EventHandler");
+                // };
+              </script>
             </section>
 
-            <br>
-
-            <h4></h4>
             <section>
-                <h5></h5>
-                <script></script>
+              <button class="button">EventListener</button>
+                <script>
+                  // No aplican funciones flecha
+                  // const button = document.querySelector(".button");
+
+                  // Esta forma funciona, sin embargo, tiene errores de ejecución
+                  // button.addEventListener("click",e);
+                  // function e() {
+                  //   alert("Soy un evento EventListener");
+                  // }
+
+                  // Esta es una forma mas ideal de usar los EventListener
+                  // button.addEventListener("click",()=>{
+                  //     alert("Soy un evento EventListener");
+                  // });
+
+                  // Remover EventListener
+                  // button.addEventListener("click",saludar);
+                  // function saludar() {
+                  //   alert("Hola");                    
+                  //   button.removeEventListener("click",saludar);
+                  // }
+
+                  // e = evento
+                  // button.addEventListener("click",(e)=>{
+                  //   console.log(e);
+                  //   console.log(e.target);
+                  // });
+                </script>
+            </section>
+
+            <h4>Flujo de eventos o event.flow</h4>
+            <!-- Es el orden en el que se ejectuan los eventos -->
+
+            <section>
+                <h5>Event Bubbling o evento en búrbuja</h5>
+                <h5>Event Capturing o captura de evento</h5>
+                <div class="contenedor_1">
+                    <div class="contenedor_2">
+                        <button class="boton">click</button>
+                    </div>
+                </div>
+                <script>
+                    // // Funciona del mas especifico l menos especifico el "true" hace que se ponga primero
+                    // const boton = document.querySelector(".boton");
+                    // const cont1 = document.querySelector(".contenedor_1");
+                    // const cont2 = document.querySelector(".contenedor_2");
+
+                    // boton.addEventListener("click",(e)=>{
+                    //     alert("Click en el botón");
+                    //     e.stopPropagation(); //Detiene la propagación y solo permite que se le dé clic, en este caso, al botón
+                    // },true);
+                    // cont1.addEventListener("click",(e)=>{
+                    //     alert("Click en el contenedor externo");
+                    //     e.stopPropagation()
+                    // });
+                    // cont2.addEventListener("click",(e)=>{
+                    //     alert("Click en el contenedor interno");
+                    //     e.stopPropagation()
+                    // });
+                </script>
+            </section>
+
+            <h4>Eventos del mouse</h4>
+            <section>
+                <h5>Click</h5>
+                <button class="b_click bt">CLICK</button>
+                <script>
+                    // Ocurre con un click
+                    const b_click = document.querySelector(".b_click");
+                    
+                    b_click.addEventListener("click",(e)=>{
+                        alert("He hecho un click");
+                    });
+                </script>
+
+                <h5>Doble Click</h5>
+                <button class="db_click bt">DOBLE CLICK</button>
+                <script>
+                    // Ocurre con un doble click
+                    const db_click = document.querySelector(".db_click");
+                    
+                    db_click.addEventListener("dblclick",(e)=>{
+                        alert("He hecho un doble click");
+                    });
+                </script>
+
+                <h5>Mouseover</h5>
+                <button class="mOver bt">MOUSEOVER</button>
+                <script>
+                    // Ocurre cuando el puntero se mueve sobre un elemento o sobre uno de sus hijos
+                    const mOver = document.querySelector(".mOver");
+                    
+                    mOver.addEventListener("mouseover",(e)=>{
+                        alert("El botón reconoce el puntero");
+                    });
+                </script>
+
+                <h5>Mouseout</h5>
+                <button class="mOut bt">MOUSEOUT</button>
+                <script>
+                    // Ocurre cuando el puntero se mueve fuera de un elemento o de sus elementos secundarios
+                    const mOut = document.querySelector(".mOut");
+                    
+                    mOut.addEventListener("mouseout",(e)=>{
+                        alert("El puntero ya no está en el botón");
+                    });
+                </script>
+
+                <h5 class="otro">[-- Otros --]</h5>
+                
+                <h5>Contextmenu</h5>
+                <button class="cMenu bt">CONTEXTMENU</button>
+                <script>
+                    // Ocurre con un click derecho en un elemento para abrir el menu contextual
+                    const cMenu = document.querySelector(".cMenu");
+                    
+                    cMenu.addEventListener("contextmenu",(e)=>{
+                        alert("El menú contextual se abrirá correctamente");
+                    });
+                </script>
+                
+                <h5>Mouseenter</h5>
+                <button class="mEnter bt">MOUSEENTER</button>
+                <script>
+                    // Similar a mouseover, ocurre cuando el puntero se mueve sobre un elemento - se utiliza especialmente para Internet Explorer
+                    const mEnter = document.querySelector(".mEnter");
+                    
+                    mEnter.addEventListener("mouseenter",(e)=>{
+                        alert("El botón reconoce el puntero");
+                    });
+                </script>
+                
+                <h5>Mousemove</h5>
+                <button class="mMove bt">MOUSEMOVE</button>
+                <script>
+                    // Ocurre cuando el puntero se mueve mientras está sobre un elemento
+                    const mMove = document.querySelector(".mMove");
+                    
+                    mMove.addEventListener("mousemove",(e)=>{
+                        alert("El botón reconoce el puntero");
+                    });
+                </script>
+                
+                <h5>Mouseleave</h5>
+                <button class="mLeave bt">MOUSELEAVE</button>
+                <script>
+                    // Ocurre cuando el puntero se mueve fuera de un elemento
+                    const mLeave = document.querySelector(".mLeave");
+                    
+                    mLeave.addEventListener("mouseleave",(e)=>{
+                        alert("El puntero ya no está en el botón");
+                    });
+                </script>
             </section>
         </div>
     </article>
