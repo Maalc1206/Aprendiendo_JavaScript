@@ -521,6 +521,69 @@
                 });
 							</script>
 						</section>
+
+            <h4>Eventos de interfaz</h4>
+            <section>
+              <!-- <img class="img" src="https://images.unsplash.com/photo-1556379092-dca659792591?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"> -->
+              <h5>Error</h5>
+              <script>
+                // // Ocurre cuando sucede un error durante la carga de un archivo multimedia
+                // const img = document.querySelector(".img");
+
+                // img.addEventListener("error",(e)=>{
+                //   console.log("Ha sucedido un error");
+                // });
+              </script>
+              
+              <h5>Load</h5>
+              <script>
+                // Ocurre cuando un objeto se ha cargado
+                addEventListener("load",()=>{
+                  console.log("Ha cargado el sitio");
+                });
+              </script>
+
+              <h5>Beforeunload</h5>
+              <script>
+                // Ocurre antes de que el documento esté a punto de descargarse
+                addEventListener("beforeunload",()=>{
+                  console.log("Saliendo del sitio");
+                })
+              </script>
+
+              <h5>Unload</h5>
+              <script>
+                // Ocurre una vez que se ha descargado una página
+                addEventListener("unload",()=>{
+                  console.log("Se está recargando el sitio");
+                })
+              </script>
+
+              <h5>Resize</h5>
+              <script>
+                // Ocurre cuando se cambia el tamaño de la vista del documento
+                addEventListener("resize",()=>{
+                  console.log("Se esta cambiando la resolución del sitio");
+                })                
+              </script>
+
+              <h5>Scroll</h5>
+              <script>
+                // Ocurre cuando se desplaza la barra de desplazamiento de un elemento
+                addEventListener("scroll",()=>{
+                  console.log("Se ha hecho scroll en el sitio");
+                })
+              </script>
+
+              <h5>Select</h5>
+              <script>
+                // Ocurre después de que el usuario selecciona algún texto de "input" o "textarea"
+                addEventListener("select",(e)=>{
+                  console.log("Se ha seleccionado texto en un input");
+                  console.log(e); // target - selectionStart y selectionEnd
+                })
+              </script>
+            </section>
 				</div>
 		</article>
 
