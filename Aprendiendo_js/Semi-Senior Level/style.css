@@ -168,3 +168,20 @@ p{
 .otro{
     margin: 10px 0px;
 }
+
+.itt{
+    font-weight: bold;
+    color: #0C47A0;
+    border-radius: 28px;
+    margin: 5px;
+    padding: 5px;
+    background: #fff;
+    transition-duration: .5s;
+    cursor: pointer;
+    outline: solid 2px #0C47A0;
+}
+.itt:hover{
+    outline: solid 2px #0C47A0;
+    background: #fff;
+    box-shadow: 0px 0px 20px #0C47A0;
+}
