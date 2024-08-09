@@ -576,15 +576,63 @@
               </script>
 
               <h5>Select</h5>
+              <input type="text" class="itt selection">
+              <div class="contenedorSelect"></div>
               <script>
                 // Ocurre después de que el usuario selecciona algún texto de "input" o "textarea"
+                const inputSelection = document.querySelector(".selection");
+                const contenedor = document.querySelector(".contenedorSelect");
+
                 addEventListener("select",(e)=>{
                   console.log("Se ha seleccionado texto en un input");
                   console.log(e); // target - selectionStart y selectionEnd
-                })
+
+                  let start = e.target.selectionStart;
+                  let end = e.target.selectionEnd;
+                  let textoCompleto = inputSelection.value;
+                  let resultado = textoCompleto.substring(start,end);
+                  console.log(`El texto seleccionado es: "<b>${resultado}</b>"`);
+                  contenedor.innerHTML = `El texto seleccionado es "<b>${resultado}</b>"`;
+                });
+              </script>
+            </section>
+
+            <h4>Timers o Temporizadores</h4>
+            <section>
+              <h5>Set Timeout</h5>
+              <div class="cont-temp"></div>
+              <script>
+                const cont = document.querySelector(".cont-temp");
+                const saludar = ()=>{
+                  cont.innerHTML = "Hola Bienvenido";                  
+                };
+                setTimeout(saludar,5000);
+                const tempo = setTimeout(() => {
+                  cont.innerHTML = "¿Cómo estás?";
+                }, 8000);
+
+                clearTimeout(tempo); // No permite ejecutar el timeout
+              </script>
+
+              <h5>Set Interval</h5>              
+              <div class="cont-int"></div>
+              <script>                
+                const contInt = document.querySelector(".cont-int");
+                const intervalo = setInterval(() => {
+                  contInt.innerHTML = "¿Cómo estás?"
+                }, 8000);
+                
+                clearInterval(intervalo) // No permite ejecutar el intrevalo
               </script>
             </section>
 				</div>
+
+        <div class="ejercicios">
+          <h3>Ejercicios</h3>
+          <ul>
+              <li><a class="ej_link" target="_blank" href="Ejercicios_SemiSenior/Ejercicios finales Semi Senior/index.html">Ejercicio 1</a> </li>
+          </ul>
+      </div>
 		</article>
 
 </body>

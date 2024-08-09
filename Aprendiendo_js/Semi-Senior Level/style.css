@@ -29,7 +29,7 @@ h1,h2,h3{
     transition-duration: .5s;
 }
 .ej_link:hover{
-    color: #3498DB;
+    color: #000;
     outline: solid 1px #3498DB;
     background: #fff;
 }

@@ -80,6 +80,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
 b{
     font-weight: bold;
